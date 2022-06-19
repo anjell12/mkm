@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>MKM-Kerinci</title>
+  </head>
+  <body id="beranda">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-info shadow-sm fixed-top"
+    >
+      <div class="container">
+        <a class="fa fa-dragon navbar-brand" data-tilt href="#beranda">
+          Muda Karya Mandiri</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item" data-tilt>
+              <a class="nav-link active" aria-current="page" href="#beranda"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item" data-tilt>
+              <a class="nav-link active" aria-current="page" href="#spesial"
+                >Spesial</a
+              >
+            </li>
+            <li class="nav-item" data-tilt>
+              <a class="nav-link active" aria-current="page" href="#project"
+                >Project</a
+              >
+            </li>
+            <li class="nav-item" data-tilt>
+              <a class="nav-link active" aria-current="page" href="#tentang"
+                >tentang</a
+              >
+            </li>
+            <li class="nav-item" data-tilt>
+              <a class="nav-link active" aria-current="page" href="#galeri"
+                >Galeri</a
+              >
+            </li>
+            </li>
+            <li class="nav-item" data-tilt>
+              <a class="nav-link active" aria-current="page" href="#kontak"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Akhir Navbar -->
+
+    <!-- slide -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide mt-5"
+      data-bs-ride="true"
+    >
+    
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/gambar/gambar1.jpg" class="d-block w-100" alt="Gambar 1"/>
+        </div>        
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Selamat Datang</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-info" href="#">Learn more</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/gambar/gambar2.jpg" class="d-block w-100" alt="Gambar 2" />
+        </div>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Selamat Datang</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-info" href="#">Learn more</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/gambar/gambar3.jpg" class="d-block w-100" alt="Ganbar 3" />
+        </div>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 >Selamat Datang</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-dark" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- akhir slide -->
+
+    <!-- spesial -->
+    <div class="spesial p-5 text-center" id="spesial">
+      <div class="container">
+        <div class="grid">
+          <div class="row mt-5">
+            <h2> SPESIAL</h2>
+        </div>            
+          <div class="row mt-5">
+            <div class="col-md-3 text-center">
+              <i class="fa fa-print fa-4x text-warning"></i>
+              <p class="h2 fw-bold my-2">Print</p>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                nam eum porro quas cumque dolores cum iure praesentium debitis
+                neque.
+              </p>
+            </div>
+            <div class="col-md-3 text-center">
+              <i class="fa fa-desktop fa-4x text-dark"></i>
+              <p class="h2 fw-bold my-2">Desktop</p>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                error corrupti, numquam porro deserunt quos saepe esse
+                perferendis consequuntur modi!
+              </p>
+            </div>
+            <div class="col-md-3 text-center">
+              <i class="fa fa-camera fa-4x text-info"></i>
+              <p class="h2 fw-bold my-2">Camera</p>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                quasi adipisci porro ex exercitationem minus excepturi corporis,
+                placeat culpa cum! Quibusdam?
+              </p>
+            </div>
+            <div class="col-md-3 text-center">
+              <i class="fa fa-file-image fa-4x text-danger"></i>
+              <p class="h2 fw-bold my-2">Image</p>
+              <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed
+                ipsa iste, animi eligendi veniam ab nobis! Beatae, libero?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir Spesial -->
+
+    <!-- project -->
+    <section id="project">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>PROJECT</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in-down" data-tilt>
+              <img
+                src="img/project/writer.jpg"
+                class="card-img-top"
+                alt="project1"
+              />
+              <div class="card-body text-center">
+                <p>Writer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="card"
+              data-aos="zoom-in-down"
+              data-tilt
+              data-aos-delay="100"
+            >
+              <img
+                src="img/project/programer.jpg"
+                class="card-img-top"
+                alt="project2"
+              />
+              <div class="card-body text-center">
+                <p>Programer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="card"
+              data-aos="zoom-in-down"
+              data-tilt
+              data-aos-delay="200"
+            >
+              <img
+                src="img/project/design.jpg"
+                class="card-img-top"
+                alt="project3"
+              />
+              <div class="card-body text-center">
+                <p>Graphic Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir project -->
+
+    <!-- Tentang -->
+    <section id="tentang">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>TENTANG KAMI</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4" data-aos="fade-right">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+              error, dignissimos reprehenderit voluptas recusandae suscipit,
+              eligendi dolore eius quos eos deserunt vero esse beatae?
+              Similique?
+            </p>
+          </div>
+          <div class="col-md-4" data-aos="fade-left">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio iusto sapiente porro ab, rerum modi illo ut eaque
+              voluptate autem odit reprehenderit optio veniam iure quisquam
+              reiciendis placeat ex. Nesciunt?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Tentang -->
+
+    <!-- Galeri -->
+    <section id="galeri">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>GALERI</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3" data-tilt>
+            <a href="#">
+              <img
+                src="img/gambar/1.jpg"
+                alt="Gambar 1"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3" data-tilt>
+            <a href="#">
+              <img
+                src="img/gambar/2.jpg"
+                alt="Gambar 2"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3" data-tilt>
+            <a href="#">
+              <img
+                src="img/gambar/3.jpg"
+                alt="Gambar 3"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3" data-tilt>
+            <a href="#">
+              <img
+                src="img/gambar/4.jpg"
+                alt="Gambar 4"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3" data-tilt>
+            <a href="#">
+              <img
+                src="img/gambar/5.jpg"
+                alt="Gambar 5"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3" data-tilt>
+            <a href="#">
+              <img
+                src="img/gambar/6.jpg"
+                alt="Gambar 6"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3" data-tilt>
+            <a href="#">
+              <img
+                src="img/gambar/7.jpg"
+                alt="Gambar 7"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3" data-tilt>
+            <a href="#">
+              <img
+                src="img/gambar/8.jpg"
+                alt="Gambar 8"
+                class="img-fluid galeri-img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Galeri -->
+
+    <!-- Kontak -->
+    <div class="spesial p-5" id="kontak">
+      <div class="container">
+        <div class="grid">
+          <div class="row text-center">
+            <div class="col">
+              <p class="h2 fw-bold">KONTAK KAMI</p>
+            </div>
+            <div class="row mt-5 md-4">
+              <div class="col-md-4 text-center">
+                <i class="fa fa-address-book fa-4x text-primary"></i>
+                <p class="h2 fw-bold my-2">Kontak Person</p>
+                <p>
+                  <i class="fab fa-google-plus-square navbar-brand"
+                    ><a class="fw-bold navbar-brand text-dark">
+                      name@gmail.com</a
+                    ></i
+                  ><br />
+                  <i class="fa fa-phone-square navbar-brand"
+                    ><a class="fw-bold navbar-brand text-dark">
+                      +62 823 7644 7440</a
+                    ></i
+                  >
+                  <br />
+                  <i class="fab fa-whatsapp-square navbar-brand"
+                    ><a class="fw-bold navbar-brand text-dark">
+                      +62 823 7644 7440</a
+                    ></i
+                  >
+                </p>
+              </div>
+              <div class="col-md-4 text-center">
+                <i class="fa fa-address-card fa-4x text-success"></i>
+                <p class="h2 fw-bold my-2">Sosial media</p>
+                <p>
+                  <i class="fab fa-facebook-square navbar-brand text-info">
+                    <a href="#" class="fw-bold navbar-brand text-dark">
+                      Facebook</a
+                    > </i
+                  ><br />
+                  <i class="fab fa-instagram navbar-brand text-danger">
+                    <a href="#" class="fw-bold navbar-brand text-dark">
+                      Instagram</a
+                    ></i
+                  ><br />
+                  <i class="fab fa-twitter-square navbar-brand text-info">
+                    <a href="#" class="fw-bold navbar-brand text-dark">
+                      Twitter</a
+                    ></i
+                  >
+                </p>
+              </div>
+              <div class="col-md-4 text-center">
+                <i class="fa fa-map-marker fa-4x text-danger"></i>
+                <p class="h2 fw-bold my-2">Lokasi</p>
+                <p class="fw-bold text-dark">
+                  Jalan Depati Parbo, Desa Pondok Siguang, Kecamatan Danau
+                  Kerinci Barat, Kabupaten Kerinci, Jambi, 37173.
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0891721060993!2d101.42840291575212!3d-2.1193339334596617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2d9f90359dd44d%3A0x9dea0d8de90a5bac!2sMKM%20(Muda%20Karya%20Mandiri)!5e0!3m2!1sid!2sid!4v1655571959064!5m2!1sid!2sid"
+                    width="300"
+                    height="150"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Kontak -->
+
+    <!-- footer -->
+    <footer
+      class="d-flex flex-wrap justify-content-center align-items-center py-3 bg-info"
+    >
+      <div class="col-md-0 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1"
+        >
+        </a>
+        <span class="text-dark">Copyright &copy; 2022 MKM-Kerinci, inc</span>
+      </div>
+    </footer>
+    <!-- Akhir footer -->
+
+    <script
+      src="js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="sweetalert/sweetalert2.all.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galeriImage = document.querySelectorAll(".galeri-img");
+
+      galeriImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 1000;
+      });
+
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      
+   
+      gsap.from(".navbar", {
+        duration: 1.5,
+        y: -100,
+        opcity: 0,
+        ease: "bounce",
+      });
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzj_et1s5KIwyNAR-gwYtuw-Exn3ynzFS3uTGu9jjtZ7913V8vizn-IcRj1QWCtHmqr4w/exec";
+      const form = document.forms["kontak-form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol loading hilangkan tombol kirim
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // tampilkan alert
+            myAlert.classList.toggle("d-none");
+            // reset formnya
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>

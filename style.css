@@ -1,0 +1,26 @@
+#tentang {
+  background-color: #e2edff;
+}
+#spesial {
+  background-color: #e2edff;
+}
+#carouselExampleIndicators {
+  background-color: #e2edff;
+}
+section {
+  padding-top: 5rem;
+}
+
+.galeri-img {
+  width: 100%;
+}
+
+#galeri .row > * {
+  padding: 0;
+}
+#kontak {
+  background-color: #e2edff;
+}
+.bg-red {
+  background-color: #cc0001;
+}
