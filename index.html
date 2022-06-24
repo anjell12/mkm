@@ -22,9 +22,9 @@
 
     <title>MKM-Group</title>
   </head>
-  <body id="beranda">
+  <body id="beranda" display-4 lead>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-info shadow-sm">
+    <nav class="navbar navbar-expand-md navbar-dark bg-info shadow-sm">
       <div class="container">
         <a class="fa fa-city navbar-brand" data-tilt href="#beranda">
           MKM-Group</a
@@ -130,7 +130,7 @@
         </div>
         <div class="container">
           <div class="carousel-caption">
-            <h1 class="fw-bold text-light">SELAMAT DATANG DI WEBSITE MKM-GROUP</h1>
+            <h1 class="animasi fw-bold text-light"></h1>
           </div>
         </div>
       </div>
@@ -381,37 +381,32 @@
     <!-- Akhir Galeri -->
 
     <!-- Kontak -->
-    <div class=" p-5" id="kontak">
+    <div class="p-5" id="kontak">
       <div class="container">
-          <div class="row mb-3 text-center">
+          <div class=" mb-3 text-center">
             <h2 class="fw-bold">KONTAK KAMI</h2>
           </div>
           <div class="row mt-5r">
             <div class="col-md-3">
               <i class="fa fa-address-book fa-4x text-primary"></i>
-              <p class="h2 fw-bold my-2">Kontak Person</p>
+              <p class="h4 my-2">Kontak Person</p>
               <p>
-                <i class="fab fa-google-plus-square navbar-brand"
-                  ><a class="fw-bold navbar-brand text-dark">
-                    mkmgroup@gmail.com</a
-                  ></i
-                ><br />
-                <i class="fa fa-phone-square navbar-brand"
+                <i class="fa fa-phone navbar-brand"
                   ><a class="fw-bold navbar-brand text-dark">
                     (0748) 3215263</a
                   ></i
                 >
                 <br />
-                <i class="fab fa-whatsapp-square navbar-brand"
+                <i class="fab fa-whatsapp navbar-brand"
                   ><a class="fw-bold navbar-brand text-dark">
                     +62 823 7644 7440</a
                   ></i
                 >
               </p>
             </div>
-            <div class="col-md-3 justify-content-center">
+            <div class="col-md-3">
               <i class="fa fa-address-card fa-4x text-success"></i>
-              <p class="h2 fw-bold my-2">Sosial media</p>
+              <p class="h4 my-2">Sosial media</p>
               <p>
                 <i class="fab fa-facebook-square navbar-brand text-info">
                   <a href="https://www.facebook.com/MKM-Percetakan-107748139780743/" class="fw-bold navbar-brand text-dark">
@@ -425,17 +420,17 @@
                 >
               </p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 ">
               <i class="fa fa-map-marker fa-4x text-danger"></i>
-              <p class="h2 fw-bold my-2">Lokasi</p>
+              <p class="h4 my-2">Lokasi</p>
               <p class="fw-bold text-dark">
                 Jalan Depati Parbo, Desa Pondok Siguang, Kecamatan Danau Kerinci
-                Barat, Kabupaten Kerinci, Jambi, 37173.
+                Barat, Kabupaten Kerinci, Jambi, 37173.              
               </p>
             </div>
             <div class="col-md-3">
               <i class="fa fa-map fa-4x text-success"></i>
-              <p class="h2 fw-bold my-2">Map</p>
+              <p class="h4 my-2">Map</p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0891721060993!2d101.42840291575212!3d-2.1193339334596617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2d9f90359dd44d%3A0x9dea0d8de90a5bac!2sMKM%20(Muda%20Karya%20Mandiri)!5e0!3m2!1sid!2sid!4v1655571959064!5m2!1sid!2sid"
                 width="280"
@@ -492,7 +487,11 @@
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
-
+      gsap.to(".animasi", {
+        duration: 2,
+        delay: 2,
+        text: "SELAMAT DATANG DI WEBSITE <br> MKM-GROUP",
+      });
       gsap.from(".navbar", {
         duration: 1.5,
         y: -100,
