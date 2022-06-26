@@ -165,7 +165,7 @@
           <div class="row mt-5">
             <div class="col-md-3 text-center">
               <i class="fa fa-print fa-4x text-warning"></i>
-              <p class="h2 fw-bold my-2">Print</p>
+              <p class="h2 fw-bold my-2">Percetakan</p>
               <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
                 nam eum porro quas cumque dolores cum iure praesentium debitis
@@ -174,7 +174,7 @@
             </div>
             <div class="col-md-3 text-center">
               <i class="fa fa-desktop fa-4x text-dark"></i>
-              <p class="h2 fw-bold my-2">Desktop</p>
+              <p class="h2 fw-bold my-2">Bingkai Foto</p>
               <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                 error corrupti, numquam porro deserunt quos saepe esse
@@ -183,7 +183,7 @@
             </div>
             <div class="col-md-3 text-center">
               <i class="fa fa-camera fa-4x text-info"></i>
-              <p class="h2 fw-bold my-2">Camera</p>
+              <p class="h2 fw-bold my-2">Fotografi</p>
               <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
                 quasi adipisci porro ex exercitationem minus excepturi corporis,
@@ -191,8 +191,8 @@
               </p>
             </div>
             <div class="col-md-3 text-center">
-              <i class="fa fa-file-image fa-4x text-danger"></i>
-              <p class="h2 fw-bold my-2">Image</p>
+              <i class="fa fa-palette fa-4x text-danger"></i>
+              <p class="h2 fw-bold my-2">Desain Grafis</p>
               <p class="lead">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed
                 ipsa iste, animi eligendi veniam ab nobis! Beatae, libero?
@@ -466,7 +466,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="sweetalert/sweetalert2.all.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       const galeriImage = document.querySelectorAll(".galeri-img");
@@ -497,34 +496,6 @@
         y: -100,
         opcity: 0,
         ease: "bounce",
-      });
-    </script>
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzj_et1s5KIwyNAR-gwYtuw-Exn3ynzFS3uTGu9jjtZ7913V8vizn-IcRj1QWCtHmqr4w/exec";
-      const form = document.forms["kontak-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // ketika tombol submit diklik
-        // tampilkan tombol loading hilangkan tombol kirim
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            // tampilkan tombol loading hilangkan tombol kirim
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            // tampilkan alert
-            myAlert.classList.toggle("d-none");
-            // reset formnya
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
       });
     </script>
   </body>
