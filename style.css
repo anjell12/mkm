@@ -1,10 +1,4 @@
-#tentang {
-  background-color: #e2edff;
-}
-#maps {
-  background-color: #e2edff;
-}
-#carouselExampleIndicators {
+#galeri {
   background-color: #e2edff;
 }
 section {
@@ -18,11 +12,10 @@ section {
 #galeri .row > * {
   padding: 0;
 }
-#kontak {
+#spesial{
   background-color: #e2edff;
 }
 body {
   min-height: 75rem;
   padding-top: 3.5rem;
 }
-s
