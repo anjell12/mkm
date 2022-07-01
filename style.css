@@ -37,4 +37,5 @@ body {
   left: 0;
   min-width: 100%;
   height: 38rem;
+  filter: brightness(50%);
 }
