@@ -43,27 +43,42 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#beranda"
+              <a
+                class="nav-link js-scroll-trigger"
+                aria-current="page"
+                href="#beranda"
                 >Beranda</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#spesial"
+              <a
+                class="nav-link js-scroll-trigger"
+                aria-current="page"
+                href="#spesial"
                 >Spesial</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#tentang"
+              <a
+                class="nav-link js-scroll-trigger"
+                aria-current="page"
+                href="#tentang"
                 >Tentang</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#galeri"
+              <a
+                class="nav-link js-scroll-trigger"
+                aria-current="page"
+                href="#galeri"
                 >Galeri</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#kontak"
+              <a
+                class="nav-link js-scroll-trigger"
+                aria-current="page"
+                href="#kontak"
                 >Kontak</a
               >
             </li>
@@ -420,6 +435,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      // Closes responsive menu when a scroll trigger link is clicked
+      $(".js-scroll-trigger").click(function () {
+        $(".navbar-collapse").collapse("hide");
+      });
+    </script>
     <script>
       gsap.registerPlugin(TextPlugin);
       gsap.to(".animasi", {
