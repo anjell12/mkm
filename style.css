@@ -39,3 +39,12 @@ body {
   height: 38rem;
   filter: brightness(50%);
 }
+.text-nav {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+}
+.text-nav:hover {
+  --bs-text-opacity: 3;
+  font-weight: bold;
+  color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+}
