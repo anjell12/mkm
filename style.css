@@ -55,13 +55,13 @@ body {
 
 #btn-back-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 5px;
   right: 20px;
   display: none;
 }
 #whatsapp {
   position: fixed;
-  bottom: 20px;
+  bottom: 5px;
   right: 70px;
 }
 
