@@ -424,7 +424,7 @@
           class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1"
         >
         </a>
-        <span class="text-light">Copyright &copy; 2022 - <?= date('Y');?> MKM-Group</span>
+        <span class="text-light text-center">Copyright &copy; 2022 - <?= date('Y');?> MKM-Group. <br> All Right Reserved.</span>
       </div>
     </footer>
     <!-- Akhir footer -->
