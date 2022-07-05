@@ -11,14 +11,13 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="aos/aos.css" />
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="img/your-logo.png" />
 
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>MKM-Group</title>
   </head>
@@ -174,12 +173,14 @@
             <div class="col-md-3 text-center">
               <i class="fa fa-print fa-4x text-warning"></i>
               <p class="h2 fw-bold my-2">Percetakan</p>
+
               <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
                 nam eum porro quas cumque dolores cum iure praesentium debitis
                 neque.
               </p>
             </div>
+
             <div class="col-md-3 text-center">
               <i class="fa fa-barcode fa-4x text-dark"></i>
               <p class="h2 fw-bold my-2">Bingkai Foto</p>
@@ -423,28 +424,49 @@
           class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1"
         >
         </a>
-        <span class="text-light">Copyright &copy; 2022 MKM-Group</span>
+        <span class="text-light">Copyright &copy; 2022 - <?= date('Y');?> MKM-Group</span>
       </div>
     </footer>
     <!-- Akhir footer -->
 
+    <!-- Tombol Bawah -->
+    <button
+      type="button"
+      class="btn btn-secondary btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-angle-up"></i></button
+    ><button
+      type="button"
+      class="btn btn-whatsapp btn floating btn-lg"
+      id="whatsapp"
+    >
+      <i class="fab fa-whatsapp text-light"><a href="#"></a></i>
+    </button>
+    <!-- Tombol Bawah -->
     <script
+      type="text/javascript"
       src="js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script src="aos/aos.js"></script>
+    <script type="text/javascript">
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
+    <script type="text/javascript" src="gsap/gsap.min.js"></script>
+    <script type="text/javascript" src="gsap/TextPlugin.min.js"></script>
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript"  src="script.js"></script>
     <script>
-      // Closes responsive menu when a scroll trigger link is clicked
       $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
       });
     </script>
-    <script>
+    <script type="text/javascript">
       gsap.registerPlugin(TextPlugin);
       gsap.to(".animasi", {
         duration: 2,
