@@ -11,13 +11,13 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="aos/aos.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="img/your-logo.png" />
 
     <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
 
     <title>MKM-Group</title>
   </head>
@@ -27,7 +27,8 @@
       class="navbar navbar-expand-md navbar-dark bg-info shadow-sm fixed-top"
     >
       <div class="container">
-        <a class="fa fa-home navbar-brand" href="#beranda"> MKM-Group</a>
+        <i class="fa fa-shop text-light fw-bold fa-2x navbar-brand"></i>
+        <a class="navbar-brand fw-bold" href="#beranda"> MKM-Group</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -79,6 +80,14 @@
                 aria-current="page"
                 href="#kontak"
                 >Kontak</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-nav js-scroll-trigger"
+                aria-current="page"
+                href="#"
+                >Blog</a
               >
             </li>
           </ul>
@@ -138,11 +147,15 @@
           />
         </div>
         <div class="carousel-caption">
-          <h1 class="animasi fw-bold text-light"></h1>
+          <h1 class="animasi1 fw-bold text-light"></h1>
+          <h2 class="animasi2 fw-bold text-light"></h2>
+          <a class="animasi3 btn btn-outline-light btn-lg" href="#galeri"
+            >Lainnya</a
+          >
         </div>
       </div>
       <button
-        class="carousel-control-prev"
+        class="carousel-control-prev btn-lg"
         type="button"
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev"
@@ -171,7 +184,7 @@
           </div>
           <div class="row mt-5">
             <div class="col-md-3 text-center">
-              <i class="fa fa-print fa-4x text-warning"></i>
+              <i class="fa fa-print fa-4x text-warning fw-bold"></i>
               <p class="h2 fw-bold my-2">Percetakan</p>
 
               <p class="lead">
@@ -182,7 +195,7 @@
             </div>
 
             <div class="col-md-3 text-center">
-              <i class="fa fa-barcode fa-4x text-dark"></i>
+              <i class="fa fa-crop-simple fa-4x text-dark fw-bold"></i>
               <p class="h2 fw-bold my-2">Bingkai Foto</p>
               <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
@@ -191,7 +204,7 @@
               </p>
             </div>
             <div class="col-md-3 text-center">
-              <i class="fa fa-camera fa-4x text-info"></i>
+              <i class="fa fa-camera fa-4x text-info fw-bold"></i>
               <p class="h2 fw-bold my-2">Fotografi</p>
               <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
@@ -200,7 +213,7 @@
               </p>
             </div>
             <div class="col-md-3 text-center">
-              <i class="fa fa-palette fa-4x text-danger"></i>
+              <i class="fa fa-palette fa-4x text-danger fw-bold"></i>
               <p class="h2 fw-bold my-2">Desain Grafis</p>
               <p class="lead">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed
@@ -215,7 +228,7 @@
 
     <!-- Tentang -->
     <section id="tentang">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row text-center">
           <div class="col">
             <h2 class="fw-bold">TENTANG KAMI</h2>
@@ -252,7 +265,7 @@
 
     <!-- Galeri -->
     <section id="galeri">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row text-center mb-3">
           <h2 class="fw-bold">GALERI</h2>
         </div>
@@ -343,54 +356,47 @@
           </div>
           <div class="row mt-5">
             <div class="col-md-3">
-              <i class="fa fa-address-book fa-4x text-primary"></i>
+              <i class="fa fa-address-book fa-4x text-primary fw-bold"></i>
               <p class="h4 my-2">Kontak Person</p>
               <p>
-                <i class="fa fa-phone navbar-brand"
-                  ><a class="fw-bold navbar-brand text-dark">
-                    (0748) 3215263</a
-                  ></i
-                >
+                <i class="fas fa-phone-square fa-2x"></i
+                ><a class="navbar-brand text-dark"> (0748) 3215263</a>
                 <br />
-                <i class="fab fa-whatsapp navbar-brand"
-                  ><a class="fw-bold navbar-brand text-dark">
-                    +62 823 7644 7440</a
-                  ></i
-                >
+                <i class="fab fa-whatsapp-square text-green fa-2x"></i
+                ><a class="navbar-brand text-dark"> 0823 7644 7440</a>
               </p>
             </div>
             <div class="col-md-3">
-              <i class="fa fa-address-card fa-4x text-info"></i>
+              <i class="fa fa-address-card fa-4x text-info fw-bold"></i>
               <p class="h4 my-2">Sosial media</p>
               <p>
-                <i class="fab fa-facebook-square navbar-brand text-info">
-                  <a
-                    href="https://www.facebook.com/MKM-Percetakan-107748139780743/"
-                    class="fw-bold navbar-brand text-dark"
-                  >
-                    Facebook</a
-                  > </i
-                ><br />
-                <i class="fab fa-instagram navbar-brand text-danger">
-                  <a
-                    href="https://www.instagram.com/mkm_percetakan/"
-                    class="fw-bold navbar-brand text-dark"
-                  >
-                    Instagram</a
-                  ></i
+                <i class="fab fa-facebook-square text-info fa-2x"></i>
+                <a
+                  href="https://www.facebook.com/MKM-Percetakan-107748139780743/"
+                  class="navbar-brand text-dark"
+                >
+                  Facebook</a
+                >
+                <br />
+                <i class="fab fa-instagram text-danger fa-2x"></i>
+                <a
+                  href="https://www.instagram.com/mkm_percetakan/"
+                  class="navbar-brand text-dark"
+                >
+                  Instagram</a
                 >
               </p>
             </div>
             <div class="col-md-3">
-              <i class="fa fa-map-marker fa-4x text-danger"></i>
+              <i class="fa fa-map-marker fa-4x text-danger fw-bold"></i>
               <p class="h4 my-2">Lokasi</p>
-              <p class="fw-bold text-dark">
+              <p class="text-dark lead">
                 Jalan Depati Parbo, Desa Pondok Siguang, Kecamatan Danau Kerinci
                 Barat, Kabupaten Kerinci, Jambi, 37173.
               </p>
             </div>
             <div class="col-md-3">
-              <i class="fa fa-map fa-4x text-success"></i>
+              <i class="fa fa-map fa-4x text-success fw-bold"></i>
               <p class="h4 my-2">Map</p>
               <iframe
                 class="img-thumbnail bg-dark"
@@ -424,7 +430,7 @@
           class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1"
         >
         </a>
-        <span class="text-light text-center"
+        <span class="text-light text-center fw-bold"
           >Copyright &copy; 2022 MKM-Group. <br />
           All Right Reserved.</span
         >
@@ -432,7 +438,7 @@
     </footer>
     <!-- Akhir footer -->
 
-    <!-- Tombol Bawah Scroll  -->
+    <!-- Tombol bawah kembali ke atas dan whatsapp  -->
     <button
       type="button"
       class="btn btn-secondary btn-floating btn-sm"
@@ -440,9 +446,7 @@
     >
       <i class="fas fa-angle-up"></i>
     </button>
-    <!-- Akhir Tombol Bawah Scroll  -->
 
-    <!-- Tombol Bawah WA  -->
     <button
       type="button"
       class="btn btn-whatsapp btn-floating btn-sm rounded-circle"
@@ -452,7 +456,7 @@
         ><a href="#"></a
       ></i>
     </button>
-    <!-- Tombol Bawah WA-->
+    <!-- Akhir tombol bawah kembali ke atas whatsapp -->
 
     <script
       type="text/javascript"
@@ -460,17 +464,17 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="aos/aos.js"></script>
+    <script src="js/aos.js"></script>
     <script type="text/javascript">
       AOS.init({
         once: true,
         duration: 2000,
       });
     </script>
-    <script type="text/javascript" src="gsap/gsap.min.js"></script>
-    <script type="text/javascript" src="gsap/TextPlugin.min.js"></script>
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="js/gsap.min.js"></script>
+    <script type="text/javascript" src="js/TextPlugin.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script>
       $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
@@ -478,14 +482,26 @@
     </script>
     <script type="text/javascript">
       gsap.registerPlugin(TextPlugin);
-      gsap.to(".animasi", {
+      gsap.to(".animasi1", {
         duration: 2,
-        delay: 2,
-        text: "SELAMAT DATANG DI WEBSITE <br> MKM-GROUP",
+        delay: 1.6,
+        text: "SELAMAT DATANG DI WEBSITE",
+      });
+      gsap.to(".animasi2", {
+        duration: 2,
+        delay: 3.9,
+        text: "MKM-GROUP",
       });
       gsap.from(".navbar", {
         duration: 1.5,
         y: -100,
+        opcity: 0,
+        ease: "bounce",
+      });
+      gsap.from(".animasi3", {
+        duration: 2,
+        delay: 6,
+        y: -700,
         opcity: 0,
         ease: "bounce",
       });
