@@ -240,8 +240,11 @@
             <h2 class="fw-bold">TENTANG KAMI</h2>
           </div>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+        <div
+          class="row justify-content-center fs-5 text-center"
+          style="overflow-x: auto"
+        >
+          <div class="col-md-4" data-aos="fade-right">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
               error, dignissimos reprehenderit voluptas recusandae suscipit,
@@ -249,7 +252,7 @@
               Similique?
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio iusto sapiente porro ab, rerum modi illo ut eaque
@@ -277,7 +280,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-3">
-            <a href="#">
+            <a href="img/gambar/1.jpg">
               <img
                 src="img/gambar/1.jpg"
                 alt="Gambar 1"
@@ -286,7 +289,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="#">
+            <a href="img/gambar/2.jpg">
               <img
                 src="img/gambar/2.jpg"
                 alt="Gambar 2"
@@ -295,7 +298,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="#">
+            <a href="img/gambar/3.jpg">
               <img
                 src="img/gambar/3.jpg"
                 alt="Gambar 3"
@@ -304,7 +307,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="#">
+            <a href="img/gambar/4.jpg">
               <img
                 src="img/gambar/4.jpg"
                 alt="Gambar 4"
@@ -313,7 +316,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="#">
+            <a href="img/gambar/5.jpg">
               <img
                 src="img/gambar/5.jpg"
                 alt="Gambar 5"
@@ -322,7 +325,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="#">
+            <a href="img/gambar/6.jpg">
               <img
                 src="img/gambar/6.jpg"
                 alt="Gambar 6"
@@ -331,7 +334,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="#">
+            <a href="img/gambar/7.jpg">
               <img
                 src="img/gambar/7.jpg"
                 alt="Gambar 7"
@@ -340,7 +343,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="#">
+            <a href="img/gambar/8.jpg">
               <img
                 src="img/gambar/8.jpg"
                 alt="Gambar 8"
@@ -489,13 +492,13 @@
     <script type="text/javascript">
       gsap.registerPlugin(TextPlugin);
       gsap.to(".animasi1", {
-        duration: 2,
+        duration: 1.5,
         delay: 1.6,
         text: "SELAMAT DATANG DI WEBSITE",
       });
       gsap.to(".animasi2", {
-        duration: 2,
-        delay: 3.9,
+        duration: 1,
+        delay: 2.5,
         text: "MKM-GROUP",
       });
       gsap.from(".navbar", {
@@ -506,7 +509,7 @@
       });
       gsap.from(".animasi3", {
         duration: 2,
-        delay: 6,
+        delay: 3,
         y: -700,
         opcity: 0,
         ease: "bounce",
