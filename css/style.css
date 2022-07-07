@@ -13,6 +13,9 @@ section {
   width: 100%;
   border-radius: 1rem;
 }
+.none {
+  text-decoration: none;
+}
 
 #galeri .row > * {
   padding: 0.2rem;
@@ -89,6 +92,7 @@ body {
   color: #fff;
   background-color: #00ff2a;
   border-color: #00ff2a;
+  z-index: 1;
 }
 .text-green {
   color: #00ff2a;
