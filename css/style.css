@@ -75,11 +75,14 @@ body {
   bottom: 5px;
   right: 5px;
   display: none;
+  opacity: 70%;
 }
+
 #whatsapp {
   position: fixed;
   bottom: 5px;
   left: 5px;
+  opacity: 70%;
 }
 
 .btn-whatsapp {
