@@ -102,14 +102,20 @@
 
     <!-- Album -->
     <div class="container-fluid mt-3">
-      <div class="row text-center">
-        <h1 class="fw-light fw-bold animasi1"></h1>
+      <div class="row text-center" style="overflow: hidden">
+        <h1 class="fw-light fw-bold" data-aos="fade-down">
+          ALBUM <br />
+          MKM-GROUP
+        </h1>
       </div>
 
       <div class="album py-2 mt-3">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+          style="overflow: hidden"
+        >
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm" data-aos="zoom-in">
               <img src="img/gambar/gambar1.jpg" alt="Gambar 1" class="gambar" />
               <div class="card-body">
                 <p class="card-text">
@@ -133,7 +139,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm" data-aos="zoom-in">
               <img src="img/gambar/gambar2.jpg" alt="Gambar 2" class="gambar" />
               <div class="card-body">
                 <p class="card-text">
@@ -157,7 +163,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm" data-aos="zoom-in">
               <img src="img/gambar/gambar3.jpg" alt="Gambar 3" class="gambar" />
 
               <div class="card-body">
@@ -183,7 +189,7 @@
           </div>
 
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm" data-aos="zoom-in">
               <img src="img/gambar/gambar4.jpg" alt="Gambar 4" class="gambar" />
               <div class="card-body">
                 <p class="card-text">
@@ -207,7 +213,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm" data-aos="zoom-in">
               <img src="img/gambar/gambar5.jpg" alt="Gambar 5" class="gambar" />
               <div class="card-body">
                 <p class="card-text">
@@ -231,7 +237,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm" data-aos="zoom-in">
               <img src="img/gambar/gambar6.jpg" alt="Gambar 6" class="gambar" />
               <div class="card-body">
                 <p class="card-text">
@@ -256,7 +262,7 @@
           </div>
 
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm" data-aos="zoom-in">
               <img src="img/gambar/gambar7.jpg" alt="Gambar 7" class="gambar" />
               <div class="card-body">
                 <p class="card-text">
@@ -280,7 +286,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm" data-aos="zoom-in">
               <img src="img/gambar/gambar8.jpg" alt="Gambar 8" class="gambar" />
               <div class="card-body">
                 <p class="card-text">
@@ -304,7 +310,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm" data-aos="zoom-in">
               <img src="img/gambar/gambar9.jpg" alt="Gambar 9" class="gambar" />
               <div class="card-body">
                 <p class="card-text">
@@ -402,12 +408,12 @@
       });
     </script>
     <script type="text/javascript">
-      gsap.registerPlugin(TextPlugin);
-      gsap.to(".animasi1", {
-        duration: 2,
-        delay: 1.6,
-        text: "ALBUM <br> MKM-GROUP",
-      });
+      // gsap.registerPlugin(TextPlugin);
+      // gsap.to(".animasi1", {
+      //   duration: 2,
+      //   delay: 1.6,
+      //   text: "",
+      // });
       gsap.from(".navbar", {
         duration: 1.5,
         y: -100,
